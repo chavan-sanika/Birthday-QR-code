@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Example</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .qr-container {
+            text-align: center;
+        }
+        .qr-container img {
+            width: 200px; /* Adjust size as needed */
+            height: 200px; /* Adjust size as needed */
+        }
+        .description {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="qr-container">
+        <!-- Generate QR code image -->
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://chavan-sanika.github.io/Birthday-Page/" alt="QR Code">
+        <div class="description">Scan this QR code to visit our site!</div>
+    </div>
+</body>
+</html>
